@@ -8,6 +8,7 @@
     <!-- Style Sheets -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Do+Hyeon" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
     <link href="css/style.css" rel="stylesheet">
     <!-- Scripts -->
     <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
@@ -26,20 +27,23 @@
 
             <article class="username-section">
                 <h3>Enter Your Username</h3>
-                <input id="userName" type="text" placeholder="Your username here" class="form-control">
-            </article>
-
-            <article class="radioBtn-section">
-                <h3>Select Your Platform</h3>
-                <div class="radio-platform-btns">
-                    <input type="radio" name="platform" value="PC" id="pc">
-                    <label for="pc">PC</label>
-                    <input type="radio" name="platform" value="Xbox" id="xbox">
-                    <label for="xbox">Xbox</label>
-                    <input type="radio" name="platform" value="PlayStation" id="playstation">
-                    <label for="playstation">PlayStation</label>
+                <div class="search-section">
+                    <input id="userName" type="text" placeholder="Your username here" class="form-control">
+                    <a href="#" id="searchStats" class="search-btn">Search <i class="fas fa-search"></i></a>
                 </div>
             </article>
+
+            <!--<article class="radioBtn-section">
+                <h3>Select Your Platform</h3>
+                <div class="radio-platform-btns">
+                    <input type="radio" name="platform" value="PC" id="pc" checked="checked">
+                    <label class="active-btn" for="pc">PC</label>
+                    <input type="radio" name="platform" value="xb1" id="xbox">
+                    <label for="xbox">Xbox</label>
+                    <input type="radio" name="platform" value="psn" id="playstation">
+                    <label for="playstation">PlayStation</label>
+                </div>
+            </article>-->
 
         </div>
     </section>
