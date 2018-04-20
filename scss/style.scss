@@ -7,4 +7,9 @@ $black: #000;
 
 /***********************
 Global Section
-/***********************
+***********************/
+
+body, html {
+    background-color: $black; 
+    background-image: url('/images/bgimage.jpg'); 
+}
