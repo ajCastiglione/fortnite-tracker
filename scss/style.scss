@@ -16,4 +16,50 @@ html {
     background-image: url('/assests/images/bgimage.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    color: $white;
+}
+
+.hide {
+    display: none;
+}
+
+/***********************
+Header Section
+***********************/
+#header {
+    text-align: center;
+}
+
+/***********************
+Input Section
+***********************/
+.username-section, .radioBtn-section {
+    margin: 1em 0;
+}
+.form-control{
+    max-width: 90%;
+}
+.radio-platform-btns {
+    text-align: center;
+
+    input {
+        display: none;
+    }
+
+    label {
+        display: inline-block;
+        width: 88%;
+        margin: 0.4em auto;
+        text-align: center;
+        background-color: $black;
+        padding: 0.5em 1em;
+        border: 2px solid $black;
+        border-radius: 5px;
+    }
+    label:nth-child(4) {
+        background-color: green;
+    }
+    label:last-child {
+        background-color: blue;
+    }
 }
