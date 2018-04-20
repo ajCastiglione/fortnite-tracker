@@ -1,0 +1,31 @@
+{
+  "name": "fortnite-stats-api",
+  "version": "1.0.0",
+  "description": "Simple program to fetch a users stats",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ajCastiglione/fortnite-tracker.git"
+  },
+  "keywords": [
+    "Fortnite",
+    "Fortnite",
+    "Stats"
+  ],
+  "author": "AJ Castiglione",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ajCastiglione/fortnite-tracker/issues"
+  },
+  "homepage": "https://github.com/ajCastiglione/fortnite-tracker#readme",
+  "devDependencies": {
+    "browser-sync": "^2.23.6",
+    "gulp": "^4.0.0",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-sass": "^4.0.1"
+  },
+  "dependencies": {}
+}
