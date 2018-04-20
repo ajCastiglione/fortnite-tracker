@@ -74,45 +74,15 @@ Input Section
     }
 }
 
+/**********************
+Output Section
+************************/
 
-.radio-platform-btns {
-    text-align: center;
-
-    input {
-        display: none;
-    }
+.inner-solo-content {
+    font-size: 1.2em;
     
-    label {
+    div {
         display: inline-block;
-        width: 88%;
-        margin: 0.4em auto;
-        font-size: 1.3em;
-        text-align: center;
-        background-color: $black;
-        padding: 0.5em 1em;
-        border: 2px solid $black;
-        border-radius: 5px;
-        transition: all 0.3s ease-in-out;
-        cursor: pointer;
-        &:hover {
-            background-color: rgba(0, 0, 0, 0.5);
-        }
-    }
-    label:nth-child(4) {
-        background-color: $green;
-        &:hover {
-            background-color: rgba(17, 125, 16, 0.5);
-        }
-    }
-    label:last-child {
-        background-color: $blue;
-        &:hover {
-            background-color: rgba(2, 42, 130, 0.5);
-        }
-    }
-    .active-btn {
-        color: $green;
-        background-color: rgba(255,255,255,0.4) !important;
     }
 }
 
