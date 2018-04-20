@@ -4,8 +4,11 @@ This is a simple program to fetch a users stats based on platform and username.
 
 ## Dependencies
 jQuery
+
 SCSS
+
 Gulp
+
 NPM
 
 ## How it works
