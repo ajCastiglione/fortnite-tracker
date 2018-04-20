@@ -2,11 +2,13 @@
 Variables
 ************************/
 
-$font: 'Do Hyeon', sans-serif;
+$font: 'Do Hyeon',
+sans-serif;
 $white: #fff;
 $black: #000;
 $green: #117D10;
 $blue: #022A82;
+$purp: #642B96;
 /***********************
 Global Section
 ***********************/
@@ -28,30 +30,63 @@ html {
 /***********************
 Header Section
 ***********************/
+
 #header {
     text-align: center;
+    padding-top: 1em;
 }
 
 /***********************
 Input Section
 ***********************/
-.username-section, .radioBtn-section {
+
+.username-section,
+.radioBtn-section {
     margin: 1em 0;
 }
-.form-control{
-    max-width: 90%;
+
+.search-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-between;
+
+    .form-control{
+        display: block;
+        margin: 1em 0;
+    }
+    .search-btn {
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin: auto;
+        background-color: $purp;
+        border: 2px solid $purp;
+        border-radius: 5px;
+        color: $white;
+        padding: 0.5em 0;
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+            text-decoration: none;
+            background-color: rgba(255,255,255, 0.3);
+        }
+    }
 }
+
+
 .radio-platform-btns {
     text-align: center;
 
     input {
         display: none;
     }
-
+    
     label {
         display: inline-block;
         width: 88%;
         margin: 0.4em auto;
+        font-size: 1.3em;
         text-align: center;
         background-color: $black;
         padding: 0.5em 1em;
@@ -60,19 +95,61 @@ Input Section
         transition: all 0.3s ease-in-out;
         cursor: pointer;
         &:hover {
-            background-color: rgba(0,0,0,0.5);
+            background-color: rgba(0, 0, 0, 0.5);
         }
     }
     label:nth-child(4) {
         background-color: $green;
         &:hover {
-            background-color: rgba(17,125,16, 0.5);
+            background-color: rgba(17, 125, 16, 0.5);
         }
     }
     label:last-child {
         background-color: $blue;
         &:hover {
-            background-color: rgba(2,42,130,0.5);
+            background-color: rgba(2, 42, 130, 0.5);
+        }
+    }
+    .active-btn {
+        color: $green;
+        background-color: rgba(255,255,255,0.4) !important;
+    }
+}
+
+/***********************
+Responsive Section
+***********************/
+
+@media screen and (min-width: 768px) {
+    .search-section {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: stretch;
+        justify-content: space-between;
+    
+        .form-control{
+            display: inline-block;
+            width: 80%;
+        }
+        .search-btn {
+            display: inline-block;
+            width: 18%;
+        }
+    }
+    .form-control {
+        max-width: 100%;
+    }
+    .radio-platform-btns {
+        label {
+            width: 48%;
+        }
+    }
+}
+
+@media screen and (min-width: 1030px) {
+    .radio-platform-btns {
+        label {
+            width: 31%;
         }
     }
 }
