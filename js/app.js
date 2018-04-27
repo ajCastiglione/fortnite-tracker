@@ -67,11 +67,13 @@ $(function () {
         out.empty();
         let statsObj = userData[0];
         let userDisplay = statsObj.name;
-        let soloContent = $(`
+        let content = $(`
         <h1>Stats for ${userDisplay}</h1>
         <div class="soloContent col-xs-12 col-md-4">
-            <h2>Solo</h2>
-            <p>${statsObj.solo.matchesPlayed} Matches</p>
+            <div class="soloTitle">
+                <h2>Solo</h2>
+                <p>${statsObj.solo.matchesPlayed} Matches</p>
+            </div>
             <div class="inner-solo-content">
                 <div class="col-xs-3"><p>Score</p><p>${statsObj.solo.score}</p></div>
                 <div class="col-xs-3"><p>Kills</p><p>${statsObj.solo.kills}</p></div>
@@ -79,9 +81,11 @@ $(function () {
                 <div class="col-xs-3"><p>K/D</p><p>${statsObj.solo.kpd}</p></div>
             </div>
         </div>
-        <div class="soloContent col-xs-12 col-md-4">
-            <h2>Duos</h2>
-            <p>${statsObj.duo.matchesPlayed} Matches</p>
+        <div class="duoContent col-xs-12 col-md-4">
+            <div class="duoTitle">
+                <h2>Duos</h2>
+                <p>${statsObj.duo.matchesPlayed} Matches</p>
+            </div>
             <div class="inner-solo-content">
                 <div class="col-xs-3"><p>Score</p><p>${statsObj.duo.score}</p></div>
                 <div class="col-xs-3"><p>Kills</p><p>${statsObj.duo.kills}</p></div>
@@ -89,9 +93,11 @@ $(function () {
                 <div class="col-xs-3"><p>K/D</p><p>${statsObj.duo.kpd}</p></div>
             </div>
         </div>
-        <div class="soloContent col-xs-12 col-md-4">
-            <h2>Squads</h2>
-            <p>${statsObj.squad.matchesPlayed} Matches</p>
+        <div class="squadContent col-xs-12 col-md-4">
+            <div class="squadTitle">
+                <h2>Squads</h2>
+                <p>${statsObj.squad.matchesPlayed} Matches</p>
+            </div>
             <div class="inner-solo-content">
                 <div class="col-xs-3"><p>Score</p><p>${statsObj.squad.score}</p></div>
                 <div class="col-xs-3"><p>Kills</p><p>${statsObj.squad.kills}</p></div>
@@ -100,7 +106,7 @@ $(function () {
             </div>
         </div>
         `);
-        out.append(soloContent);
+        out.append(content);
     }
 
 });
