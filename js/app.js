@@ -10,7 +10,7 @@ $(function () {
     function initSearch(evt) {
         let code = evt.keycode || evt.which;
 
-        if (evt.type === 'click') {
+        if (evt.type === 'click' && un.val() !== "") {
             searchBtn.html('loading...');
             evt.preventDefault();
             getStats();
@@ -18,7 +18,9 @@ $(function () {
             if (un.val() !== "") {
                 searchBtn.html('loading...');
                 getStats();
-            }
+            } 
+        } else {
+            out.empty().html(`Please enter a username or nickname. Do not leave the input field blank.`);
         }
 
     }
